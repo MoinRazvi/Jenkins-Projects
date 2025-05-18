@@ -15,7 +15,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    def imageName = "jenkins-add-script:latest"
+                    def imageName = "my-add-script-image:latest"
                     sh "docker build -t ${imageName} ."
                 }
             }
